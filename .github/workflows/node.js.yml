@@ -16,7 +16,7 @@ jobs:
           node-version: "20.12.1" # Update the version to the appropriate one
 
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Install dependencies
         run: npm install
@@ -27,7 +27,7 @@ jobs:
     needs: build
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Use Node.js 20
         uses: actions/setup-node@v4 # Update to version 4 for Node.js 20
