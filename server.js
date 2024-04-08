@@ -4,6 +4,14 @@ const generatePassword = require("generate-password");
 const PORT = process.env.PORT || 3000;
 
 // Define a route for the API
+app.get("/", (req, res) => {
+  // Replace 'Your Name' with your actual name
+  const name = "Server is running!";
+  // Sending the name in JSON format
+  res.json({ name });
+});
+
+// Define a route for the API
 app.get("/api/name", (req, res) => {
   // Replace 'Your Name' with your actual name
   const name = "11111111111111111111111111111111";
