@@ -47,4 +47,4 @@ jobs:
 
       - name: Deploy to server
         run: |
-          ssh -o StrictHostKeyChecking=no aditya@140.238.224.130 "cd htdocs/oracle-api.adityatawade.com && git pull && npm install && pm2 restart server.js" # Adjust the SSH command as needed
+          ssh -o StrictHostKeyChecking=no ubuntu@144.24.126.72 "cd /home/node-cd-ci/htdocs/hello.adityatawade.com && git pull && npm install && pm2 restart server.js" # Adjust the SSH command as needed
