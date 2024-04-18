@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3050;
 // Define a route for the API
 app.get("/", (req, res) => {
   // Replace 'Your Name' with your actual name
-  const name = "Server is running!!!!!!!!!";
+  const name = "Hello World!";
   // Sending the name in JSON format
   res.json({ name });
 });
