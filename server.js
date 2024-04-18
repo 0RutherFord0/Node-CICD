@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const generatePassword = require("generate-password");
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3050;
 
 // Define a route for the API
 app.get("/", (req, res) => {
